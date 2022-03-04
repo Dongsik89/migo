@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bench/css/style.css">
+    <title>파쏘리폼</title>
+</head>
+
+
+<body>
+
+    <header>
+        <h1><img src="images/Logo.png"></h1>
+
+        <div class="hWrap">
+
+        <ul class="gnb">
+            <li><a href="#">자동차</a></li>
+            <li><a href="#">바이크</a></li>
+            <li><a href="#">자전거</a></li>
+            <li><a href="#">보트&제트스키</a></li>
+            <li><a href="#">캠핑&트레일러</a></li>
+            <li><a href="#">헬기&비행기</a></li>
+            <li><a href="#">쇼핑</a></li>
+            <li><a href="#">커뮤니티</a></li>
+        </ul>
+
+        <div class="over">
+            <div class="back back1"><img src="images/gnb_back1.png"></div>
+            <div class="back back2"><img src="images/gnb_back2.png"></div>
+            <div class="back back3"><img src="images/gnb_back3.png"></div>
+            <div class="back back4"><img src="images/gnb_back4.png"></div>
+            <div class="back back5"><img src="images/gnb_back5.png"></div>
+            <div class="back back6"><img src="images/gnb_back6.png"></div>
+            <div class="back back7"><img src="images/gnb_back7.png"></div>
+            <div class="back back8"><img src="images/gnb_back8.png"></div>
+            
+        </div>
+
+        <ul class="util">
+            <li><a href="#">최근 본 상품</a></li>
+            <li><a href="#">관심상품</a></li>
+            <li><a href="#">로그인</a></li>
+        </ul>
+
+
+    </div><!--hWrap-->
+
+
+    </header>
+
+    <div class="mainBn">
+        <a href="#"><img src="images/mainBn.png"></a>
+    </div>
+
+
+    <main>
+
+        <div class="mWrap">
+        <h2>Top Pick</h2>
+
+        <div class="mainrow">
+        <div class="box">
+            <div class="thum">
+                <a href=""><img src="images/top1.png"></a>
+            </div><!--thum-->
+
+            <a href="#"><h3>#새 것 같은 바이크</h3>
+            <p>가와사키 닌자 1000 SX ABS<br>
+            2021년식 4,275km</p>
+            <p class="price">1764 만원</p></a>
+        </div><!--box1-->      
+
+        <div class="box">
+            <div class="thum">
+                <a href=""><img src="images/top2.png"></a>
+            </div><!--thum-->
+
+            <a href="#"><h3>#1인 신조 무사고</h3>
+            <p>클래식 그랜져<br>
+                1997년식 78,000km</p>
+        <p class="price">1700 만원</p></a>
+        </div><!--box2-->      
+
+
+        <div class="box">
+            <div class="thum">
+                <a href=""><img src="images/top3.png"></a>
+            </div><!--thum-->
+
+            <a href="#"><h3>덴마크 감성</h3>
+            <p>오코<br>
+                26인치 2단</p>
+        
+        <p class="price">297 만원</p></a>
+        </div><!--box3-->      
+
+
+        <div class="box">
+            <div class="thum">
+                <a href=""><img src="images/top4.png"></a>
+            </div><!--thum-->
+
+            <a href="#"><h3>#변태 유지 관리</h3>
+            <p>야마하 242 리미티드S<br>
+            실주행시간 68시간</p>
+            <p class="price">9200 만원</p></a>
+        </div><!--box4-->      
+
+
+        <div class="box">
+            <div class="thum">
+                <a href=""><img src="images/top5.png"></a>
+            </div><!--thum-->
+
+            <a href="#"><h3>#신차</h3>
+            <p>제일모빌 오버랜드 칸<br>
+            2021년식 1,300km</p>
+        <p class="price">7890 만원</p></a>
+        </div><!--box5-->      
+
+
+        <div class="box">
+            <div class="thum">
+                <a href=""><img src="images/top6.png"></a>
+            </div><!--thum-->
+
+            <a href="#"><h3>#형편문제로...</h3>
+            <p>UH-12E클래식 헬리곱터<br>
+            실주행시간 180시간</p>
+        <p class="price">27500 만원</p></a>
+        </div><!--box6-->    
+        
+        
+    </div><!--mainrow-->
+
+
+    
+
+    </div><!--mWrap-->
+
+
+
+    </main>
+
+    
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        
+        $('.gnb').children().on('mouseover',function(){
+            let i = $(this).index();
+            $('.back').eq(i).css({
+                'opacity' : '1'
+            })
+        });
+        $('.gnb').children().on('mouseout',function(){
+            let i = $(this).index()
+            $('.back').eq(i).css({
+                'opacity' : '0'
+            })
+        });
+
+
+    
+
+
+    </script>
+</body>
+</html>
